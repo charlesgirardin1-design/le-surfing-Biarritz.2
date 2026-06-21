@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie – Le Surfing Biarritz</title>
+  <meta name="description" content="Galerie photo du Surfing Biarritz : ambiance, plats, terrasse face à l'Atlantique et esprit surf basque." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Le Surfing</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menu.html">La carte</a></li>
+        <li><a href="galerie.html" class="active">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservation.html" class="btn-nav">Réserver</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1400&q=80')">
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="label">Le Surfing Biarritz</span>
+      <h1>Galerie</h1>
+      <p>Ambiance, saveurs et vue sur l'Atlantique.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">En images</span>
+        <h2>L'esprit du Surfing</h2>
+        <p>Une atmosphère décontractée et authentique, des plats généreux et une vue imprenable sur l'océan — c'est Le Surfing Biarritz.</p>
+      </div>
+    </div>
+
+    <div class="gallery-full">
+
+      <div class="gallery-category">
+        <div class="container">
+          <h3 class="gallery-cat-title">Notre cadre</h3>
+        </div>
+        <div class="gallery-masonry">
+          <div class="gm-item tall">
+            <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=700&q=80" alt="Vue sur l'Atlantique" />
+            <div class="gm-caption">Vue sur l'Atlantique</div>
+          </div>
+          <div class="gm-item">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=700&q=80" alt="La côte basque" />
+            <div class="gm-caption">La côte basque</div>
+          </div>
+          <div class="gm-item">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=80" alt="L'océan depuis la terrasse" />
+            <div class="gm-caption">Depuis la terrasse</div>
+          </div>
+          <div class="gm-item wide">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=900&q=80" alt="La terrasse du Surfing" />
+            <div class="gm-caption">Notre terrasse</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-category alt-bg">
+        <div class="container">
+          <h3 class="gallery-cat-title">Nos plats</h3>
+        </div>
+        <div class="gallery-masonry">
+          <div class="gm-item">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Plat du chef" />
+            <div class="gm-caption">Plat du chef</div>
+          </div>
+          <div class="gm-item tall">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80" alt="Fruits de mer" />
+            <div class="gm-caption">Fruits de mer</div>
+          </div>
+          <div class="gm-item">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=700&q=80" alt="Poisson grillé" />
+            <div class="gm-caption">Poisson grillé</div>
+          </div>
+          <div class="gm-item">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=700&q=80" alt="Pizza & plancha" />
+            <div class="gm-caption">Plancha du Surfing</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-category">
+        <div class="container">
+          <h3 class="gallery-cat-title">Ambiance & cocktails</h3>
+        </div>
+        <div class="gallery-masonry">
+          <div class="gm-item wide">
+            <img src="https://images.unsplash.com/photo-1470338745628-171cf53de3a8?w=900&q=80" alt="Ambiance soirée" />
+            <div class="gm-caption">Soirée au Surfing</div>
+          </div>
+          <div class="gm-item">
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=700&q=80" alt="Cocktails" />
+            <div class="gm-caption">Nos cocktails</div>
+          </div>
+          <div class="gm-item tall">
+            <img src="https://images.unsplash.com/photo-1528823872057-9c018a7a7553?w=700&q=80" alt="Verre de vin" />
+            <div class="gm-caption">Vins du Pays Basque</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INSTAGRAM CTA -->
+  <section class="cta-band">
+    <div class="container cta-band-inner">
+      <div>
+        <h2>Suivez-nous sur Instagram</h2>
+        <p>Des mises à jour quotidiennes, des événements exclusifs et des aperçus de notre cuisine. <strong>#LeSurfing #Biarritz</strong></p>
+      </div>
+      <a href="#" target="_blank" rel="noopener" class="btn-primary btn-insta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Voir notre Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Le Surfing</a>
+        <p>Restaurant & Bar · Biarritz, Pays Basque</p>
+        <p>9 Bd du Prince de Galles, 64200 Biarritz</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">La carte</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="reservation.html">Réserver</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Le Surfing Biarritz · Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Carte – Le Surfing Biarritz</title>
+  <meta name="description" content="Découvrez la carte du Surfing Biarritz : entrées, plats, desserts et boissons. Cuisine locale et de saison en bord de mer." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Le Surfing</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menu.html" class="active">La carte</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservation.html" class="btn-nav">Réserver</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=80')">
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="label">Le Surfing Biarritz</span>
+      <h1>La Carte</h1>
+      <p>Plats frais, locaux et de saison — renouvelés au fil des arrivages.</p>
+    </div>
+  </section>
+
+  <!-- INTRO MENU -->
+  <section class="page-intro">
+    <div class="container page-intro-inner">
+      <p>Notre chef compose chaque jour une carte courte et généreuse à partir des meilleurs produits du Pays Basque et de la côte atlantique. Cuisine locale, authentique et de saison.</p>
+      <div class="menu-badges">
+        <span class="service-tag">🌿 Options végétariennes</span>
+        <span class="service-tag">🐟 Poissons du jour</span>
+        <span class="service-tag">🏷 Produits locaux</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="container">
+      <div class="menu-tabs">
+        <button class="tab active" data-tab="entrees">Entrées</button>
+        <button class="tab" data-tab="plats">Plats</button>
+        <button class="tab" data-tab="desserts">Desserts</button>
+        <button class="tab" data-tab="boissons">Boissons</button>
+      </div>
+
+      <div class="menu-grid active" id="tab-entrees">
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Anchois de Getaria</h3><span>14 €</span></div>
+          <p>Marinés à l'huile d'olive, toast au beurre d'Espelette</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Gaspacho basque</h3><span>12 €</span></div>
+          <p>Tomates, poivrons grillés, crème de fromage de brebis</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Carpaccio de thon</h3><span>18 €</span></div>
+          <p>Thon rouge, citron vert, fleur de sel, huile d'Arbequina</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Salade océane</h3><span>16 €</span></div>
+          <p>Crevettes, avocat, pamplemousse rose, vinaigrette gingembre</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Soupe de poissons</h3><span>13 €</span></div>
+          <p>Rouille maison, gruyère râpé, croûtons dorés à l'ail</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Assiette de jambon ibérique</h3><span>17 €</span></div>
+          <p>Jambon pata negra, pain grillé à la tomate, huile d'olive</p>
+        </div>
+      </div>
+
+      <div class="menu-grid" id="tab-plats">
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Ttoro de pêcheur</h3><span>28 €</span></div>
+          <p>Soupe de poissons basque, rouille maison, croûtons ailés</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Chipirons à l'encre</h3><span>26 €</span></div>
+          <p>Encornets farcis, riz noir, légumes du jardin</p>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-top"><h3>Dorade royale entière <span class="badge">Coup de cœur</span></h3><span>34 €</span></div>
+          <p>Grillée au feu de bois, piperade maison, pommes de terre grenaille</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Magret de canard des Landes</h3><span>30 €</span></div>
+          <p>Sauce cerise-Armagnac, gratin de cèpes</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Risotto aux cèpes <span class="badge vege">Végé</span></h3><span>22 €</span></div>
+          <p>Cèpes frais, parmesan affiné 24 mois, huile de truffe</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Burger du Surfing</h3><span>19 €</span></div>
+          <p>Bœuf charolais, cheddar, oignons confits, frites maison</p>
+        </div>
+      </div>
+
+      <div class="menu-grid" id="tab-desserts">
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Gâteau basque</h3><span>9 €</span></div>
+          <p>Crème pâtissière ou confiture cerises noires, crème fraîche</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Tarte aux pommes</h3><span>8 €</span></div>
+          <p>Pommes Fuji, caramel au beurre salé, boule de vanille</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Île flottante au piment</h3><span>9 €</span></div>
+          <p>Meringue légère, crème anglaise, poudre d'Espelette</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Fromages du Pays Basque</h3><span>12 €</span></div>
+          <p>Ossau-Iraty, brebis frais, confiture de figues</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Fondant chocolat</h3><span>9 €</span></div>
+          <p>Cœur coulant, glace vanille bourbon, éclats de praline</p>
+        </div>
+      </div>
+
+      <div class="menu-grid" id="tab-boissons">
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Txakoli Basque</h3><span>7 €</span></div>
+          <p>Vin blanc pétillant, léger et fruité, du Pays Basque</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Irouléguy rouge</h3><span>8 €</span></div>
+          <p>AOC Irouléguy, tanins soyeux, notes épicées</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Bière Pêcheur Biarritz</h3><span>6 €</span></div>
+          <p>Bière artisanale locale, blonde légèrement ambrée</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Cocktail Surf Sunset</h3><span>11 €</span></div>
+          <p>Rhum, passion, citron vert, sirop d'hibiscus</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Eau minérale</h3><span>4 €</span></div>
+          <p>Perrier ou Evian — carafe d'eau offerte</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top"><h3>Café & infusions</h3><span>3 €</span></div>
+          <p>Espresso, noisette, café au lait, thés & tisanes</p>
+        </div>
+      </div>
+
+      <div class="menu-note">
+        <p>Tous nos plats sont préparés avec des produits frais. La carte change selon les saisons et les arrivages. Allergènes disponibles sur demande auprès de notre équipe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA RESERVATION -->
+  <section class="cta-band">
+    <div class="container cta-band-inner">
+      <div>
+        <h2>Prêt à passer à table ?</h2>
+        <p>Réservez votre table et profitez de la vue sur l'Atlantique. Ouvert tous les jours de 10h30 à 22h00.</p>
+      </div>
+      <a href="https://www.google.com/maps/reserve/v/dine/c/FndfW2MKxDg?source=pa&opi=89978449&hl=fr-FR&gei=3Qw4aorrEPickdUPwpPL6AI&sourceurl=https://www.google.com/search?q%3Dle%2Bsurfing%2Bbiarritz%2Bpappers%26oq%3Dle%2Bsur%26pf%3Dcs%26sourceid%3Dchrome%26ie%3DUTF-8" target="_blank" rel="noopener" class="btn-primary">Réserver maintenant</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Le Surfing</a>
+        <p>Restaurant & Bar · Biarritz, Pays Basque</p>
+        <p>9 Bd du Prince de Galles, 64200 Biarritz</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">La carte</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="reservation.html">Réserver</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Le Surfing Biarritz · Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Le Surfing Biarritz</title>
+  <meta name="description" content="Contactez le Surfing Biarritz. Adresse : 9 Bd du Prince de Galles, 64200 Biarritz. Tél : 05 59 24 78 72. Ouvert tous les jours." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Le Surfing</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menu.html">La carte</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="reservation.html" class="btn-nav">Réserver</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1400&q=80')">
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="label">Le Surfing Biarritz</span>
+      <h1>Nous trouver</h1>
+      <p>9 Bd du Prince de Galles, 64200 Biarritz · Ouvert tous les jours.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT MAIN -->
+  <section id="contact-page">
+    <div class="container contact-full">
+
+      <!-- Carte -->
+      <div class="contact-map-full">
+        <iframe
+          title="Carte Le Surfing Biarritz"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5640%2C43.4820%2C-1.5540%2C43.4870&layer=mapnik&marker=43.4843%2C-1.5590"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Infos -->
+      <div class="contact-cards">
+
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          </div>
+          <h3>Adresse</h3>
+          <p>9 Bd du Prince de Galles<br />64200 Biarritz</p>
+          <a href="https://maps.google.com/?q=9+Bd+du+Prince+de+Galles,+64200+Biarritz" target="_blank" rel="noopener" class="contact-card-link">Voir sur Google Maps →</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.5 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.41 1h3a2 2 0 012 1.72c.127.96.36 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.44a16 16 0 006.06 6.06l1.23-1.27a2 2 0 012.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h3>Téléphone</h3>
+          <p>Du lundi au dimanche<br />de 10h30 à 22h00</p>
+          <a href="tel:+33559247872" class="contact-card-link">05 59 24 78 72</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Horaires</h3>
+          <table class="hours-table">
+            <tr><td>Lundi</td><td>10h30 – 22h00</td></tr>
+            <tr><td>Mardi</td><td>10h30 – 22h00</td></tr>
+            <tr><td>Mercredi</td><td>10h30 – 22h00</td></tr>
+            <tr><td>Jeudi</td><td>10h30 – 22h00</td></tr>
+            <tr><td>Vendredi</td><td>10h30 – 22h00</td></tr>
+            <tr><td>Samedi</td><td>10h30 – 22h00</td></tr>
+            <tr class="today"><td>Dimanche</td><td>10h30 – 22h00</td></tr>
+          </table>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3>Réseaux sociaux</h3>
+          <p>Suivez notre actualité, nos événements et nos plats du jour sur les réseaux.</p>
+          <div class="contact-social">
+            <a href="#" class="contact-card-link">Instagram</a>
+            <a href="#" class="contact-card-link">Facebook</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ACCES -->
+  <section id="acces">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Comment venir</span>
+        <h2>Accès & stationnement</h2>
+      </div>
+      <div class="acces-grid">
+        <div class="acces-item">
+          <div class="acces-icon">🚗</div>
+          <h4>En voiture</h4>
+          <p>Depuis l'autoroute A63, sortie Biarritz-La Négresse. Parking payant disponible à proximité du boulevard du Prince de Galles.</p>
+        </div>
+        <div class="acces-item">
+          <div class="acces-icon">🚌</div>
+          <h4>En bus</h4>
+          <p>Lignes CHRONOPLUS n°1 et n°14. Arrêt <strong>Grande Plage</strong> à 2 min à pied du restaurant.</p>
+        </div>
+        <div class="acces-item">
+          <div class="acces-icon">🚶</div>
+          <h4>À pied</h4>
+          <p>Le restaurant se trouve en bord de mer, à 5 min à pied de l'hypercentre de Biarritz, sur le boulevard du Prince de Galles.</p>
+        </div>
+        <div class="acces-item">
+          <div class="acces-icon">🚲</div>
+          <h4>En vélo</h4>
+          <p>Station Vélib' à 100m. La piste cyclable longe la côte jusqu'à notre terrasse.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA RESERVATION -->
+  <section class="cta-band">
+    <div class="container cta-band-inner">
+      <div>
+        <h2>Vivez l'expérience Le Surfing</h2>
+        <p>Réservez votre table et profitez d'une vue imprenable sur l'Atlantique.</p>
+      </div>
+      <a href="reservation.html" class="btn-primary">Réserver une table</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Le Surfing</a>
+        <p>Restaurant & Bar · Biarritz, Pays Basque</p>
+        <p>9 Bd du Prince de Galles, 64200 Biarritz</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">La carte</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="reservation.html">Réserver</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Le Surfing Biarritz · Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

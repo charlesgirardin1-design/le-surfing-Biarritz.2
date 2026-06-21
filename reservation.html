@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réservation – Le Surfing Biarritz</title>
+  <meta name="description" content="Réservez votre table au Surfing Biarritz. Ouvert tous les jours de 10h30 à 22h00. Terrasse face à l'Atlantique." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Le Surfing</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menu.html">La carte</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservation.html" class="btn-nav active">Réserver</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=80')">
+    <div class="hero-overlay" style="background: linear-gradient(160deg, rgba(5,40,55,0.85) 0%, rgba(10,80,100,0.7) 100%)"></div>
+    <div class="page-hero-content">
+      <span class="label">Le Surfing Biarritz</span>
+      <h1>Réserver une table</h1>
+      <p>Garantissez votre place face à l'Atlantique. Ouvert tous les jours de 10h30 à 22h00.</p>
+    </div>
+  </section>
+
+  <!-- RESERVATION SECTION -->
+  <section id="reservation-page">
+    <div class="container">
+
+      <div class="resa-layout">
+
+        <!-- Infos pratiques -->
+        <div class="resa-info">
+          <h2>Informations pratiques</h2>
+
+          <div class="resa-info-block">
+            <div class="resa-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <strong>Horaires d'ouverture</strong>
+              <p>Tous les jours — 10h30 à 22h00</p>
+            </div>
+          </div>
+
+          <div class="resa-info-block">
+            <div class="resa-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </div>
+            <div>
+              <strong>Adresse</strong>
+              <p>9 Bd du Prince de Galles<br />64200 Biarritz</p>
+            </div>
+          </div>
+
+          <div class="resa-info-block">
+            <div class="resa-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.5 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.41 1h3a2 2 0 012 1.72c.127.96.36 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.44a16 16 0 006.06 6.06l1.23-1.27a2 2 0 012.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Réservation téléphonique</strong>
+              <a href="tel:+33559247872" class="resa-phone">05 59 24 78 72</a>
+            </div>
+          </div>
+
+          <div class="resa-info-block">
+            <div class="resa-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div>
+              <strong>Services disponibles</strong>
+              <div class="services-tags" style="margin-top:6px">
+                <span class="service-tag">Terrasse</span>
+                <span class="service-tag">Végétarien</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resa-google">
+            <p>Réservation instantanée via Google :</p>
+            <a href="https://www.google.com/maps/reserve/v/dine/c/FndfW2MKxDg?source=pa&opi=89978449&hl=fr-FR&gei=3Qw4aorrEPickdUPwpPL6AI&sourceurl=https://www.google.com/search?q%3Dle%2Bsurfing%2Bbiarritz%2Bpappers%26oq%3Dle%2Bsur%26pf%3Dcs%26sourceid%3Dchrome%26ie%3DUTF-8"
+               target="_blank" rel="noopener" class="btn-reserve-google">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Réserver sur Google
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="resa-form-wrap">
+          <h2>Demande de réservation</h2>
+          <p class="resa-form-sub">Remplissez ce formulaire et nous vous confirmerons votre table dans les plus brefs délais.</p>
+
+          <form class="reservation-form standalone" id="reservationForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom complet *</label>
+                <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="jean@example.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="05 59 24 78 72" />
+              </div>
+              <div class="form-group">
+                <label for="guests">Nombre de personnes *</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Sélectionner</option>
+                  <option value="1">1 personne</option>
+                  <option value="2">2 personnes</option>
+                  <option value="3">3 personnes</option>
+                  <option value="4">4 personnes</option>
+                  <option value="5">5 personnes</option>
+                  <option value="6+">6+ personnes</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date *</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Heure *</label>
+                <select id="time" name="time" required>
+                  <option value="">Sélectionner</option>
+                  <option>10:30</option>
+                  <option>11:00</option>
+                  <option>11:30</option>
+                  <option>12:00</option>
+                  <option>12:30</option>
+                  <option>13:00</option>
+                  <option>13:30</option>
+                  <option>14:00</option>
+                  <option>14:30</option>
+                  <option>19:00</option>
+                  <option>19:30</option>
+                  <option>20:00</option>
+                  <option>20:30</option>
+                  <option>21:00</option>
+                  <option>21:30</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label for="message">Message (optionnel)</label>
+              <textarea id="message" name="message" placeholder="Allergies, occasion spéciale, demande particulière…" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Envoyer la demande</button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <h3>Demande envoyée !</h3>
+            <p>Merci ! Nous vous confirmerons votre réservation par email ou téléphone dans les plus brefs délais. À très bientôt au Surfing !</p>
+            <a href="index.html" class="btn-primary" style="margin-top:20px;display:inline-block">Retour à l'accueil</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Le Surfing</a>
+        <p>Restaurant & Bar · Biarritz, Pays Basque</p>
+        <p>9 Bd du Prince de Galles, 64200 Biarritz</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">La carte</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="reservation.html">Réserver</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Le Surfing Biarritz · Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
