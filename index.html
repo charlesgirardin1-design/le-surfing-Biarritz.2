@@ -37,7 +37,7 @@
       <p class="hero-sub">Cuisine du marché face à l'océan, sur la Grande Plage de Biarritz.</p>
       <div class="hero-cta">
         <a href="#menu" class="btn-primary">Découvrir la carte</a>
-        <a href="#reservation" class="btn-secondary">Réserver une table</a>
+        <a href="https://www.google.com/maps/reserve/v/dine/c/FndfW2MKxDg?source=pa&opi=89978449&hl=fr-FR&gei=3Qw4aorrEPickdUPwpPL6AI&sourceurl=https://www.google.com/search?q%3Dle%2Bsurfing%2Bbiarritz%2Bpappers%26oq%3Dle%2Bsur%26pf%3Dcs%26sourceid%3Dchrome%26ie%3DUTF-8" target="_blank" rel="noopener" class="btn-secondary">Réserver une table</a>
       </div>
     </div>
     <div class="hero-scroll">
@@ -192,7 +192,20 @@
       <div class="section-header light">
         <span class="label">Réservation</span>
         <h2>Réserver une table</h2>
-        <p>Garantissez votre place face à l'Atlantique.</p>
+        <p>Garantissez votre place face à l'Atlantique. Ouvert tous les jours de 10h30 à 22h00.</p>
+      </div>
+      <div class="reservation-cta-box">
+        <p>Réservez directement via Google :</p>
+        <a href="https://www.google.com/maps/reserve/v/dine/c/FndfW2MKxDg?source=pa&opi=89978449&hl=fr-FR&gei=3Qw4aorrEPickdUPwpPL6AI&sourceurl=https://www.google.com/search?q%3Dle%2Bsurfing%2Bbiarritz%2Bpappers%26oq%3Dle%2Bsur%26pf%3Dcs%26sourceid%3Dchrome%26ie%3DUTF-8"
+           target="_blank" rel="noopener" class="btn-reserve-google">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Réserver sur Google
+        </a>
+        <p class="or-divider">— ou par téléphone —</p>
+        <a href="tel:+33559247872" class="btn-reserve-phone">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.5 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.41 1h3a2 2 0 012 1.72c.127.96.36 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.44a16 16 0 006.06 6.06l1.23-1.27a2 2 0 012.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          05 59 24 78 72
+        </a>
       </div>
       <form class="reservation-form" id="reservationForm" novalidate>
         <div class="form-row">
@@ -232,14 +245,21 @@
             <label for="time">Heure</label>
             <select id="time" name="time" required>
               <option value="">Sélectionner</option>
+              <option>10:30</option>
+              <option>11:00</option>
+              <option>11:30</option>
               <option>12:00</option>
               <option>12:30</option>
               <option>13:00</option>
               <option>13:30</option>
+              <option>14:00</option>
+              <option>14:30</option>
+              <option>19:00</option>
               <option>19:30</option>
               <option>20:00</option>
               <option>20:30</option>
               <option>21:00</option>
+              <option>21:30</option>
             </select>
           </div>
         </div>
@@ -247,7 +267,7 @@
           <label for="message">Message (optionnel)</label>
           <textarea id="message" name="message" placeholder="Allergies, occasion spéciale…" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn-primary">Confirmer la réservation</button>
+        <button type="submit" class="btn-primary">Envoyer la demande</button>
       </form>
       <div class="form-success" id="formSuccess">
         <div class="success-icon">✓</div>
@@ -266,21 +286,23 @@
         <ul class="contact-list">
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-            <span>9 Plateau de l'Atalaye, 64200 Biarritz</span>
+            <a href="https://maps.google.com/?q=9+Bd+du+Prince+de+Galles,+64200+Biarritz" target="_blank" rel="noopener">9 Bd du Prince de Galles, 64200 Biarritz</a>
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.5 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.41 1h3a2 2 0 012 1.72c.127.96.36 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.44a16 16 0 006.06 6.06l1.23-1.27a2 2 0 012.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            <span>+33 5 59 24 44 66</span>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>contact@lesurfing-biarritz.fr</span>
+            <a href="tel:+33559247872">05 59 24 78 72</a>
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             <div>
-              <strong>Midi</strong> Lun–Dim 12h00–14h30<br />
-              <strong>Soir</strong> Mar–Sam 19h30–22h30
+              <strong>Tous les jours</strong> 10h30–22h00
+            </div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <div class="services-tags">
+              <span class="service-tag">Terrasse</span>
+              <span class="service-tag">Végétarien</span>
             </div>
           </li>
         </ul>
@@ -288,7 +310,7 @@
       <div class="contact-map">
         <iframe
           title="Carte Le Surfing Biarritz"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5650%2C43.4820%2C-1.5550%2C43.4870&layer=mapnik&marker=43.4845%2C-1.5598"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5640%2C43.4820%2C-1.5540%2C43.4870&layer=mapnik&marker=43.4843%2C-1.5590"
           allowfullscreen
           loading="lazy">
         </iframe>
