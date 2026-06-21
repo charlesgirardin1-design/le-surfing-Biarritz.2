@@ -31,6 +31,7 @@
 
   <!-- HERO -->
   <section id="hero">
+    <div id="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-tag">Restaurant · Bar · Biarritz</p>
@@ -47,6 +48,13 @@
     </div>
   </section>
 
+  <!-- Wave separator hero → intro -->
+  <div class="wave-sep to-sand" style="background:transparent">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"/>
+    </svg>
+  </div>
+
   <!-- INTRO -->
   <section id="intro">
     <div class="container split">
@@ -59,13 +67,20 @@
         <p>Découvrez Le Surfing Biarritz, un restaurant emblématique situé à Biarritz, offrant une expérience culinaire unique en bord de mer. Savourez des plats frais, locaux et de saison dans une ambiance décontractée et authentique, tout en profitant de vues spectaculaires sur l'océan Atlantique.</p>
         <p>Rejoignez notre communauté de passionnés de gastronomie et de surf à Biarritz et vivez l'esprit convivial du Sud-Ouest.</p>
         <div class="stats">
-          <div class="stat"><strong>30+</strong><span>ans d'histoire</span></div>
-          <div class="stat"><strong>100%</strong><span>produits locaux</span></div>
-          <div class="stat"><strong>★ 4.7</strong><span>sur Google</span></div>
+          <div class="stat"><strong data-count="30" data-suffix="+">30+</strong><span>ans d'histoire</span></div>
+          <div class="stat"><strong data-count="100" data-suffix="%">100%</strong><span>produits locaux</span></div>
+          <div class="stat"><strong data-count="47" data-suffix="/10">★ 4.7</strong><span>sur Google</span></div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Wave separator intro → highlights -->
+  <div class="wave-sep sand to-white" style="background:var(--white); transform:rotate(180deg)">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,20 1440,40 L1440,80 L0,80 Z" fill="var(--sand)"/>
+    </svg>
+  </div>
 
   <!-- HIGHLIGHTS -->
   <section id="highlights">
