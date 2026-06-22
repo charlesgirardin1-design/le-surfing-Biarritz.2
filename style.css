@@ -311,14 +311,31 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   transform: scaleY(-1);
 }
 
-/* Each layer slides at a different speed — seamless loop at -50% */
-.wave-l1 { animation: waveDrift 8s linear infinite; }
-.wave-l2 { animation: waveDrift 13s linear infinite reverse; }
-.wave-l3 { animation: waveDrift 18s linear infinite; }
+/* 3 layers : vitesses + phases différentes, drift horizontal + oscillation verticale */
+.wave-l1 { animation: waveFlow1 7s ease-in-out infinite; }
+.wave-l2 { animation: waveFlow2 11s ease-in-out infinite; }
+.wave-l3 { animation: waveFlow3 17s ease-in-out infinite; }
 
-@keyframes waveDrift {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+@keyframes waveFlow1 {
+  0%   { transform: translateX(0)      translateY(0px); }
+  25%  { transform: translateX(-12%)   translateY(-7px); }
+  50%  { transform: translateX(-25%)   translateY(0px); }
+  75%  { transform: translateX(-37%)   translateY(-5px); }
+  100% { transform: translateX(-50%)   translateY(0px); }
+}
+@keyframes waveFlow2 {
+  0%   { transform: translateX(-50%)   translateY(0px); }
+  30%  { transform: translateX(-35%)   translateY(-9px); }
+  50%  { transform: translateX(-25%)   translateY(-4px); }
+  70%  { transform: translateX(-15%)   translateY(-9px); }
+  100% { transform: translateX(0%)     translateY(0px); }
+}
+@keyframes waveFlow3 {
+  0%   { transform: translateX(0)      translateY(0px); }
+  20%  { transform: translateX(-8%)    translateY(-4px); }
+  50%  { transform: translateX(-25%)   translateY(-10px); }
+  80%  { transform: translateX(-40%)   translateY(-3px); }
+  100% { transform: translateX(-50%)   translateY(0px); }
 }
 
 /* ===== PAGE HERO (inner pages) ===== */
